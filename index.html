@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles_index.css">
+    <style>
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.8;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background: #6b705c;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #a5a58d;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    position: relative;
+    padding: 10px 0;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffe8d6;
+}
+
+nav a img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fefae0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.content {
+    margin-bottom: 40px;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+    color: #6b705c;
+}
+
+article {
+    margin-bottom: 25px;
+}
+
+article h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+article h3:hover {
+    color: #6b705c;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+article img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #6b705c;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Noticias y Ofertas</h1>
+    </header>
+    <nav>
+        <a href="ofertas.html"><img src="pic_rss.gif" alt="RSS icon"> Ofertas de la Semana</a>
+        <a href="noticias.html"><img src="pic_rss.gif" alt="RSS icon"> Últimas Noticias</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h2>¡Bienvenido!</h2>
+            <p>Este es un sitio web donde puedes encontrar enlaces a noticias y opiniones.</p>
+            <p>¡Explora y disfruta!</p>
+        </div>
+
+        <div class="content">
+            <h2>Noticias</h2>
+            <article>
+                <h3>Accidente en San Telmo: dos personas heridas graves tras perder una guagua el control en la estación</h3>
+                <p>Una guagua de Global ha chocado contra una de las paredes del interior de la estación de San Telmo, en Las Palmas de Gran Canaria, tras atropellar a una persona que se encontraba cerca de uno de los andenes y dejar encarcelada a otra que viajaba en el vehículo.</p>
+                <p>Fecha de publicación: 15 MAY 2024 14:03</p>
+                <img src="https://estaticos-cdn.prensaiberica.es/clip/7a465e40-6529-4a5b-98dd-407ae75e4dd0_source-aspect-ratio_default_0.jpg" alt="Noticia 1" width=" 600"> 
+            </article>
+
+            <h2>Ofertas</h2>
+            <article>
+                <h3>ProArt Studiobook Pro 16 OLED</h3>
+                <p>Caja abierta: producto sin usar, Intel Core i9-13980HX (36MB Cache), 32GB DDR5-SDRAM, 1000GB SSD, 40.6 cm (16") 3200 x 2000 OLED Touch, Intel UHD Graphics, NVIDIA RTX A3000 (8GB GDDR6), LAN, WLAN, Webcam, No OS</p>
+                <p>Oferta valida hasta 6/09/2024</p>
+                <img src="https://ofertasdelasemana.com/243673-tm_large_default/proart-studiobook-pro-16-oled-w7604j3d-my052-i9-13980hx-portatil-16-pantalla-tactil-intel-core-i9-32-gb-ddr5-s.jpg" alt="Oferta 1" width=" 500">
+            </article>
+        </div>
+    </div>
+    <footer>
+        <p>Alexander Cruz Rodriguez</p>
+    </footer>
+</body>
+</html>

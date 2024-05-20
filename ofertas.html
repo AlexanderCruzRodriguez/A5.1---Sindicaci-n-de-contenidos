@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talón de Noticias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .noticias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .noticia {
+            width: calc(33.33% - 20px);
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .noticia:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .noticia img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .noticia .contenido {
+            padding: 20px;
+        }
+        .noticia .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .noticia .descripcion {
+            font-size: 16px;
+            color: #666;
+        }
+        @media screen and (max-width: 768px) {
+            .noticia {
+                width: calc(50% - 20px);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .noticia {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ofertas</h1>
+        <div class="noticias">
+            <div class="noticia">
+                <img src="https://via.placeholder.com/400x200" alt="Noticia 1">
+                <div class="contenido">
+                    <div class="titulo">Título de la Noticia 1</div>
+                    <div class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="https://via.placeholder.com/400x200" alt="Noticia 2">
+                <div class="contenido">
+                    <div class="titulo">Título de la Noticia 2</div>
+                    <div class="descripcion">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="https://via.placeholder.com/400x200" alt="Noticia 3">
+                <div class="contenido">
+                    <div class="titulo">Título de la Noticia 3</div>
+                    <div class="descripcion">Nullam ac nisi ac augue auctor vulputate. Proin tincidunt odio ut mi condimentum.</div>
+                </div>
+            </div>
+            <!-- Agrega más noticias aquí -->
+        </div>
+    </div>
+</body>
+</html>
